@@ -54,6 +54,7 @@ import GroqProviderLogo from '@renderer/assets/images/providers/groq.png?url'
 import OpenAiProviderLogo from '@renderer/assets/images/providers/openai.png?url'
 import SiliconFlowProviderLogo from '@renderer/assets/images/providers/silicon.png?url'
 import ZhipuProviderLogo from '@renderer/assets/images/providers/zhipu.png?url'
+import LingAppLogo from '@renderer/assets/images/apps/ling.png?url'
 import i18n from '@renderer/i18n'
 import { MinAppType } from '@renderer/types'
 
@@ -460,7 +461,17 @@ const ORIGIN_DEFAULT_MIN_APPS: MinAppType[] = [
     logo: LongCatAppLogo,
     url: 'https://longcat.chat/',
     bodered: true
-  }
+  },
+  {
+    id: 'ling',
+    name: i18n.t('minapps.ling'),
+    url: 'https://ling.tbox.cn/chat',
+    logo: LingAppLogo,
+    bodered: true,
+    style: {
+      padding: 6
+    }
+  },
 ]
 
 // 加载自定义小应用并合并到默认应用中
