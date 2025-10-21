@@ -405,6 +405,14 @@ export const isDeepSeekHybridInferenceModel = (model: Model) => {
   return /deepseek-v3(?:\.\d|-\d)(?:(\.|-)\w+)?$/.test(modelId) || modelId.includes('deepseek-chat-v3.1')
 }
 
+export const isLingReasoningModel = (model?: Model): boolean => {
+  if (!model) {
+    return false
+  }
+  const modelId = getLowerBaseModelName(model.id, '/')
+  return modelId.includes('ring-1t') || modelId.includes('ring-mini') || modelId.includes('ring-flash')
+}
+
 export const isSupportedThinkingTokenDeepSeekModel = isDeepSeekHybridInferenceModel
 
 export const isZhipuReasoningModel = (model?: Model): boolean => {
@@ -456,6 +464,7 @@ export function isReasoningModel(model?: Model): boolean {
     isZhipuReasoningModel(model) ||
     isStepReasoningModel(model) ||
     isDeepSeekHybridInferenceModel(model) ||
+    isLingReasoningModel(model) ||
     modelId.includes('magistral') ||
     modelId.includes('minimax-m1') ||
     modelId.includes('pangu-pro-moe') ||

@@ -88,6 +88,7 @@ import LlamaModelLogo from '@renderer/assets/images/models/llama.png'
 import LlamaModelLogoDark from '@renderer/assets/images/models/llama_dark.png'
 import LLavaModelLogo from '@renderer/assets/images/models/llava.png'
 import LLavaModelLogoDark from '@renderer/assets/images/models/llava_dark.png'
+import LingModelLogo from '@renderer/assets/images/models/ling.png'
 import LumaModelLogo from '@renderer/assets/images/models/luma.png'
 import LumaModelLogoDark from '@renderer/assets/images/models/luma_dark.png'
 import MagicModelLogo from '@renderer/assets/images/models/magic.png'
@@ -288,6 +289,8 @@ export function getModelLogo(modelId: string) {
     zhipu: isLight ? ZhipuModelLogo : ZhipuModelLogoDark,
     longcat: LongCatAppLogo,
     bytedance: BytedanceModelLogo,
+    ling: LingModelLogo,
+    ring: LingModelLogo,
     '(V_1|V_1_TURBO|V_2|V_2A|V_2_TURBO|DESCRIBE|UPSCALE)': IdeogramModelLogo
   } as const
 
