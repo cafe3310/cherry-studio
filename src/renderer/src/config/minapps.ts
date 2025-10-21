@@ -25,6 +25,7 @@ import GrokXAppLogo from '@renderer/assets/images/apps/grok-x.png?url'
 import KimiAppLogo from '@renderer/assets/images/apps/kimi.webp?url'
 import LambdaChatLogo from '@renderer/assets/images/apps/lambdachat.webp?url'
 import LeChatLogo from '@renderer/assets/images/apps/lechat.png?url'
+import LingAppLogo from '@renderer/assets/images/apps/ling.png?url'
 import LongCatAppLogo from '@renderer/assets/images/apps/longcat.svg?url'
 import MetasoAppLogo from '@renderer/assets/images/apps/metaso.webp?url'
 import MonicaLogo from '@renderer/assets/images/apps/monica.webp?url'
@@ -54,7 +55,6 @@ import GroqProviderLogo from '@renderer/assets/images/providers/groq.png?url'
 import OpenAiProviderLogo from '@renderer/assets/images/providers/openai.png?url'
 import SiliconFlowProviderLogo from '@renderer/assets/images/providers/silicon.png?url'
 import ZhipuProviderLogo from '@renderer/assets/images/providers/zhipu.png?url'
-import LingAppLogo from '@renderer/assets/images/apps/ling.png?url'
 import i18n from '@renderer/i18n'
 import { MinAppType } from '@renderer/types'
 
@@ -464,14 +464,14 @@ const ORIGIN_DEFAULT_MIN_APPS: MinAppType[] = [
   },
   {
     id: 'ling',
-    name: i18n.t('minapps.ling'),
+    name: i18n.t('minapps.ant-ling'),
     url: 'https://ling.tbox.cn/chat',
     logo: LingAppLogo,
     bodered: true,
     style: {
       padding: 6
     }
-  },
+  }
 ]
 
 // 加载自定义小应用并合并到默认应用中

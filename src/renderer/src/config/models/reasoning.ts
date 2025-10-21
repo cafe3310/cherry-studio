@@ -410,7 +410,7 @@ export const isLingReasoningModel = (model?: Model): boolean => {
     return false
   }
   const modelId = getLowerBaseModelName(model.id, '/')
-  return modelId.includes('ring-1t') || modelId.includes('ring-mini') || modelId.includes('ring-flash')
+  return ['ring-1t', 'ring-mini', 'ring-flash'].some((id) => modelId.includes(id))
 }
 
 export const isSupportedThinkingTokenDeepSeekModel = isDeepSeekHybridInferenceModel

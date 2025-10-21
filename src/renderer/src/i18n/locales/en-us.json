@@ -1804,6 +1804,7 @@
     "title": "MinApp"
   },
   "minapps": {
+    "ant-ling": "Ant Ling",
     "baichuan": "Baichuan",
     "baidu-ai-search": "Baidu AI Search",
     "chatglm": "ChatGLM",
@@ -1822,8 +1823,7 @@
     "wenxin": "ERNIE",
     "wps-copilot": "WPS Copilot",
     "xiaoyi": "Xiaoyi",
-    "zhihu": "Zhihu",
-    "ling": "Ant Ling"
+    "zhihu": "Zhihu"
   },
   "miniwindow": {
     "alert": {
